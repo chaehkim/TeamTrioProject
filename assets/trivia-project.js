@@ -22,6 +22,7 @@ var qAmount = localStorage.getItem("amount");
 // Get the activeName variable from UserRegistration
 var activeName = localStorage.getItem("activeName");
 var activeUID = localStorage.getItem("activeUID");
+var updateScore = localStorage.getItem("updateScore");
 
 var config = {
     apiKey: "AIzaSyDJg6iGckNliThCVzR5jgjGtpp1w4FP3KE",
@@ -49,6 +50,7 @@ function gameOver() {
         score: updateScore
     });
     localStorage.setItem("correctScore", correct);
+    localStorage.setItem("updateScore", updateScore)
 };
 
 $(document).ready(function() {

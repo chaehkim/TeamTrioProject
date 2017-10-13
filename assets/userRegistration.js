@@ -24,6 +24,7 @@
         localStorage.removeItem("amount");
         localStorage.removeItem("category");
         localStorage.removeItem("difficulty");
+        localStorage.removeItem("updateScore");
 
         // Function to clear form
         function resetForm() {

@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     $("#welcome-heading").append(localStorage.activeName);
     $("#game-points").append(localStorage.correctScore);
-
+    $("#total-points").append(localStorage.updateScore);
 
     // Add On-click of End Game (Log out and close browser)
     $("#end-game").on("click", function() {
