@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trivia game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/triviaP1.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <script src="vegas.js"></script>
+    <link rel="stylesheet" href="vegas.css">
+    <script src="assets/userInput.js"></script>
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default text-center">
+        <div class="container-fluid">
+            <h1>Entertainment Trivia</h1>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>  </h2>
+        <form class="form-api">
+            <h2 class="form-signin-heading">Welcome  <span id="welcome-heading"></span></h2>
+            <label class="title" for="trivia_amount">Number of Questions:</label>
+            <input type="number" name="trivia_amount" id="trivia_amount" class="form-control" min="1" max="50" value="" required>
+            <br>
+            <label class="title" for="trivia_difficulty">Select Difficulty: </label>
+            <select name="trivia_difficulty" id="trivia_difficulty" class="form-control" required>
+                <option value="any">Choose an option....</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <br>
+            <label class="title" for="trivia_category">Select Category: </label>
+            <select name="trivia_category" id="trivia_category" class="form-control">
+                <option value="any">Choose a category...</option>
+                <option value="11">Entertainment: Film</option>
+                <option value="12">Entertainment: Music</option>
+                <option value="14">Entertainment: Telivision</option>
+            </select>
+            <br>
+            <a href="game.html">
+                <button class="btn btn-default" type="Submit" id="btnSubmit">Submit</button>
+            </a>
+            <!-- Modal for input validation-->
+            <div class="myModal">
+                <!-- Modal content -->
+                <div class="modal">
+                    <p>You have not filled in the necessary information!</p>
+                </div>
+            </div>
+        </form>
+        <script>
+        $("#page-top, body").vegas({
+            slides: [
+                { src: "movies.jpg" },
+                { src: "tv.jpg" },
+                { src: "music.jpg" }
+            ]
+        })
+        </script>
+    </div>
+</body>
+
+</html>

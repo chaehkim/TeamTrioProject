@@ -1,0 +1,89 @@
+.container{
+	background-color:black;
+	border-radius: 20px;
+	margin-top:50px;
+	padding-bottom:150px;
+	padding-top:30px;
+	padding-left:25px;
+	padding-right:25px;
+	border:white solid 2px;
+	
+}
+
+#questions{
+	font-size:20px;
+	color:yellow;
+	font-weight:bold;
+}
+
+.btn{
+	white-space: normal;
+	color:yellow;
+	background-color:red;
+}
+
+.btn:hover {
+	background-color:yellow;
+	color:red;
+}
+
+#title{
+font-family: 'Monoton', cursive;
+color:yellow;
+}
+
+.scoreBoard{
+	font-size:20px;
+	color:red;
+	font-weight:bold;
+	margin-top:20px;
+	margin-bottom: 0px;
+	background-color:black;
+	border-radius: 20px;
+	border:white solid 2px;
+}
+
+/*#page-top{
+	background-image: url("../assets/images/movies.jpg");
+} */
+
+.form-signin-heading{
+	color:yellow;
+	font-family: 'Monoton', cursive;
+	font-size: 20px;
+}
+
+.title{
+	color:red;
+}
+
+.navbar{
+	background-color:red;
+	color:yellow;
+	font-family: 'Monoton', cursive;
+}
+
+/*#regBody{
+	background-image: url("../assets/images/movies.jpg");
+}*/
+
+#regForm{
+	margin-top:0px;
+}
+
+.modal{
+	background-color:black;
+	border:yellow solid 2px;
+	color:red;
+	font-size: 40px;
+	text-align:center;
+}
+
+#map{
+	height:400px;
+	width:400px;
+}
+
+#ranking-table{
+	color:yellow;
+}
